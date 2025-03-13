@@ -14,20 +14,9 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <dialog id="floppy-modal" class="floppy-modal">
-      <div class="floppy-modal__content">
-        <svg class="floppy-icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-          <use href="svg/floppy.svg#floppy" />
-        </svg>
-        <span>Вставьте дискету, чтобы продолжить</span>
-      </div>
-      <button class="modal__button main-button" onclick="window['floppy-modal'].close()"><span>OK</span></button>
-    </dialog>
     <header class="header clamp-to-full-width">
-      <div class="header__logo-group">
-        <div class="header__logo">&lt;/HTML&gt;</div>
-        <h1 class="header__title">закрывающий тег</h1>
-      </div>
+      <a href="/" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
     </header>
     <main class="main">
       <ul class="card__list clamp-to-full-width">
@@ -47,7 +36,7 @@
                 <p>Место для ваших воспоминаний о начале обучения.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -69,7 +58,7 @@
                     />
                   </svg>
                 </button>
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -93,7 +82,7 @@
                 <p>Место для ваших воспоминаний о начале первого спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -115,8 +104,7 @@
                     />
                   </svg>
                 </button>
-
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -139,7 +127,7 @@
                 <p>Место для ваших воспоминаний об окончании первого спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -161,8 +149,7 @@
                     />
                   </svg>
                 </button>
-
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -185,7 +172,7 @@
                 <p>Место для ваших воспоминаний о начале второго спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -207,7 +194,7 @@
                     />
                   </svg>
                 </button>
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -231,7 +218,7 @@
                 <p>Место для ваших воспоминаний об окончании второго спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -253,8 +240,7 @@
                     />
                   </svg>
                 </button>
-
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -277,7 +263,7 @@
                 <p>Место для ваших воспоминаний о начале третьего спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -299,8 +285,7 @@
                     />
                   </svg>
                 </button>
-
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -323,7 +308,7 @@
                 <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -345,8 +330,7 @@
                     />
                   </svg>
                 </button>
-
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -370,7 +354,7 @@
                 <p>Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
               </div>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button type="button" aria-label="Like" class="card__icon-button">
                   <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36" fill="none">
                     <g class="heart">
                       <path
@@ -392,7 +376,7 @@
                     />
                   </svg>
                 </button>
-                <button class="main-button card__like-button">
+                <button type="button" aria-label="Like" class="main-button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -400,13 +384,22 @@
           </article>
         </li>
       </ul>
+      <button type="button" aria-label="Сохранить на память" class="dialog__button main-button" onclick="window['floppy-modal'].showModal()">
+        <svg class="floppy-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+          <use href="svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
-    <button class="dialog__button main-button" onclick="window['floppy-modal'].showModal()">
-      <svg class="floppy-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-        <use href="svg/floppy.svg#floppy" />
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
+    <dialog id="floppy-modal" class="floppy-modal">
+      <div class="floppy-modal__content">
+        <svg class="floppy-icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+          <use href="svg/floppy.svg#floppy" />
+        </svg>
+        <p>Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <button type="button" aria-label="OK" class="modal__button main-button" onclick="window['floppy-modal'].close()"><span>OK</span></button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

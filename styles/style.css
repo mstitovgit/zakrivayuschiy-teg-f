@@ -9,16 +9,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-
-@keyframes like-scale {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.25);
-  }
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -36,6 +26,11 @@
 button {
   margin: 0;
   padding: 0;
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-button {
@@ -116,7 +111,7 @@ button {
   text-transform: uppercase;
 }
 
-.floppy-modal__content span {
+.floppy-modal__content p {
   min-inline-size: 198px;
 }
 
@@ -131,18 +126,13 @@ button {
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-block: var(--header-block-margin);
   border: var(--border);
   padding-block: var(--header-block-padding);
   background-color: var(--background-color);
-}
-
-.header__logo-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 
@@ -164,7 +154,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-block-end: 50px;
+  margin-block-end: 100px;
+  gap: 50px;
 }
 
 .card__list {
@@ -184,8 +175,8 @@ button {
 .card__title {
   padding-inline: 10px;
   padding-block: 6px;
-  font-size: var(--h2-font-size);
-  line-height: 100%;
+  font-size: var(--card-title-font-size);
+  line-height: 120%;
   font-variation-settings: "wght" var(--headline-weight);
 }
 
@@ -213,10 +204,10 @@ button {
   mix-blend-mode: hard-light;
 }
 
-@supports (text-stroke: 1px var(--background-color)) {
+@supports (-webkit-text-stroke: 1px var(--background-color)) {
   .card__image-watermark {
     text-shadow: none;
-    text-stroke: 1px var(--background-color);
+    -webkit-text-stroke: 1px var(--background-color);
   }
 }
 
@@ -270,7 +261,8 @@ button {
   flex-direction: column;
   gap: 27px;
   padding-bottom: 25px;
-  line-height: 130%;
+  line-height: 116%;
+  font-size: var(--card-text-font-size);
 }
 
 .card__buttons {
@@ -307,71 +299,8 @@ button {
   height: 36px;
 }
 
-.contour {
-  transition: fill 0.1s linear;
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s 0.05s;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.like-icon:hover .core {
-  fill: var(--main-color);
-  transition: fill 0.3s 0.03s;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--main-color);
-  transition: fill 0.3s;
-}
-
-.like-icon:active .core {
-  fill: var(--red);
-  transition: fill 0.3s 0.03s;
-}
-
-.like-icon:active .main-body {
-  fill: var(--red);
-  transition: fill 0.3s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--red);
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--red);
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--red);
-  transition: fill 0.3s 0.06s;
-}
-.heart {
-  transform-origin: center;
-}
-
-.like-icon.is-liked .heart {
-  animation: like-scale 0.3s ease-in 0.1s;
-}
-
-.like-icon.is-liked .sparks {
-  opacity: 1;
-}
-
 .dialog__button {
   flex-wrap: wrap;
-  margin-block-end: 100px;
   padding-inline: 19px 21px;
   padding-block: 15px;
 }

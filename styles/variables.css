@@ -1,9 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --Inter: "Inter";
-  --PressStart2P: "PressStart2P";
-  --main-font: var(--Inter);
-  --secondary-font: var(--PressStart2P);
+  --main-font: "Inter";;
+  --secondary-font: "PressStart2P";
   --main-weight: 400;
   --headline-weight: 700;
   --block-inline-size: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
@@ -11,18 +9,19 @@
   --title-font-size: clamp(0.875rem, 2.804vw + 0.218rem, 1.438rem);
   --main-color: #000;
   --background-color: #fff;
-  --red: #ff0000;
+  --accent-color: #ff0000;
   --modal-backdrop-color: #000;
   --border: 2px solid var(--main-color);
   --border-hidden: 2px solid transparent;
   --font-size-def: 14px;
+  --card-text-font-size:18px;
   --floppy-modal-inline-size: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
-  --h2-font-size: 18px;
+  --card-title-font-size: 18px;
   --header-block-padding: clamp(7.5rem, 2.492vw + 6.916rem, 8rem);
   --header-block-margin: 100px;
 }
 
-@media (width<=375) {
+@media (width<=375px) {
   :root {
     --block-inline-size: 100%;
   }
