@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter";;
+  --main-font: "Inter";
   --secondary-font: "PressStart2P";
   --main-weight: 400;
   --headline-weight: 700;
@@ -14,7 +14,7 @@
   --border: 2px solid var(--main-color);
   --border-hidden: 2px solid transparent;
   --font-size-def: 14px;
-  --card-text-font-size:18px;
+  --card-text-font-size: 18px;
   --floppy-modal-inline-size: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
   --card-title-font-size: 18px;
   --header-block-padding: clamp(7.5rem, 2.492vw + 6.916rem, 8rem);
