@@ -153,7 +153,7 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-block-end: 100px;
   gap: 50px;
 }
@@ -161,7 +161,6 @@ a {
 .card__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 50px;
 }
 
@@ -300,6 +299,7 @@ a {
 }
 
 .dialog__button {
+  inline-size: fit-content;
   flex-wrap: wrap;
   padding-inline: 19px 21px;
   padding-block: 15px;
